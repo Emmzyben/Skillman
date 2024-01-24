@@ -1,0 +1,217 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillman</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="about.html">
+     <link rel="shortcut icon" href="images/image.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+<body>
+  
+
+   
+<div id="secondDiv">
+<div style="width: 25%;text-align: left;padding-left: 30px;font-style: italic;color: #0884cc;">
+    <h1>SKillman</h1>
+</div>
+<div style="width: 75%;text-align: right;padding-top: 20px;">
+<ul id="ul1">
+    <li><a href="index.html" > Home</a></li>
+    <li><a href="#intro"> About</a></li> 
+    <li><a href="signin.html">Sign In</a></li>
+    <li><a href="signup.html" id="swallow" style="color: #fff;">Sign Up</a></li>
+</ul>
+
+<div onclick="openNav()">
+<div class="container" onclick="myFunction(this)" id="sideNav">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div id="mySidenav" class="sidenav">
+  <div style="margin: 10px;font-style: italic;">
+    <h3>Skillman</h3>
+  </div>
+  <a href="index.html">Home</a>
+  <a href="signin.html">Sign In</a>
+  <a id="swallow" href="signup.html">Sign Up</a>
+</div>
+
+<section>
+
+ 
+
+
+
+  <div id="intro">
+    <div>
+     <p style="color: #0884cc;font-weight: 800;">//Introducing</p> 
+    <h1 id="none">Skillman</h1>  
+   <p> Skillman is a place where skilled professionals can sign up and share short videos of what they're good at. Clients can easily find and book skilled professionals from anywhere using our smart location system.
+</p>
+   <p> Join us today to showcase your skills to the world and chat with other skilled professionals in real time. It's a great way to connect and discover opportunities. Sign up now and let Skillman be your platform to shine!
+  </p></div>
+
+    <div><video src="images/vecteezy_solar-panel-green-or-renewable-energy-business-concept_33858281.mp4" autoplay loop></video></div>
+  </div>
+
+
+
+  <div style="background-color: #E8E8E8;" id="padding">
+<div style="text-align: center;">
+ <h1 style="color: #188BCC;font-size: 36px;line-height: 30px;margin-bottom: 14px;">Explore!</h1>
+ <p id="pad">What you can do on skillman
+</p>
+</div>
+
+<div id="homeServices">
+<a href="inspection.html">
+  <div class="image-container">
+  <img src="images/skilled.jpg" alt="">
+  <div style="padding: 10px 20px 20px;"><h1>Share videos</h1> 
+<p>On skillman you can showcase your skills and share your craft with other professionals</p>
+</div>
+ 
+</div></a>
+
+<a href="testing.html"><div class="image-container">
+  <img src="images/skilled.jpg" alt="">
+  <div style="padding: 10px 20px 20px;"><h1>Interact</h1> 
+<p>You can connect, engage, and thrive through real-time interactions with other professionals</p>
+</div>
+ </div></a>
+
+<a href="NDT_Training.html"><div class="image-container">
+  <img src="images/skilled.jpg" alt="">
+<div style="padding: 10px 20px 20px;"> <h1>Get booked</h1>
+<p>You can unlock opportunities, get booked, and showcase your expertise professionally</p>
+</div>
+</div></a>
+
+<a href="specialized_Services.html"><div class="image-container">
+  <img src="images/skilled.jpg" alt="">
+  <div style="padding: 10px 20px 20px;"> 
+  <h1>Book a skilled professional</h1>
+   <p>You can hire excellence by booking a skilled professional for your needs on skillman</p>
+</div>
+
+</div></a>
+
+
+</div>
+
+</section>
+
+
+<div class="outer-container">
+<div class="inner-container">
+  <div  id="innerbox1">
+<h3 style="color: #0884cc;">Join Now</h3>
+<p>Showcase your skill to the world, Let your skill get the attention it deserves</p>
+  <button><a href="signup.html" style="color: #fff;text-decoration: none;">SIGN UP</a></button>
+</div>
+  <div id="innerbox2">
+    <img src="images/skilled.jpg" alt=""  >
+  </div>
+</div>
+</div>
+
+<div style="background-image: url(images/skilled.jpg);;background-repeat: no-repeat;background-size:cover;">
+<div id="lastDiv">
+ <h2 style="color: #fff;">Quality Policy & <span style="color: #188bcc;">Objectives</span></h2> 
+<p>Elevate your projects with expertise! Sign up now on skillman to connect with skilled professionals.</p>
+<p> Choose the best talent for your job</p>
+<button><a href="signup.html" style="color: white;text-decoration: none;"><b>Get started</b></a></button>
+</div>
+</div>
+
+<div id="flag-container">
+  <h2 style="text-align: center;color: #0884cc;">Showcase your skills!</h2>
+  <div id="flagger">
+    <div class="flag-container-inner"></div>
+  </div>
+  <script>
+    
+const countryFlags = ['images/shell.png', 'images/strides.png', 'images/agip.png', 'images/alcon.png', 'images/mobil.png', 'images/nnpc.png'];
+
+const flagContainerInner = document.querySelector('.flag-container-inner');
+
+function createFlagElement(flagPath) {
+  const flagElement = document.createElement('img');
+  flagElement.src = flagPath;
+  flagElement.classList.add('flag');
+  return flagElement;
+}
+
+// Duplicate the images to ensure seamless rolling effect
+const duplicatedFlags = [...countryFlags, ...countryFlags];
+
+duplicatedFlags.forEach(flagPath => {
+  const flagElement = createFlagElement(flagPath);
+  flagContainerInner.appendChild(flagElement);
+});
+
+let currentPosition = 0;
+const increment = 0.05; // Adjust the increment value for the desired speed
+
+function rollFlags() {
+  currentPosition -= increment;
+  flagContainerInner.style.transform = `translateX(${currentPosition}%)`;
+
+  if (currentPosition <= -100) {
+    currentPosition = 0;
+  }
+
+  requestAnimationFrame(rollFlags);
+}
+
+// Start the animation loop
+rollFlags();
+  </script>
+</div>
+
+
+<footer>
+  <div id="footDivs" >
+  <div id="innnerfoot" class="inner">
+ <div >
+ <p id="linkz">Quick Links</p> 
+<p><a href="index.html">Home</a></p>
+<p><a href="about.html">About Us</a></p>
+<p><a href="signup.html">Sign Up</a></p>
+ </div> 
+ <div >
+ <p id="linkz">Legal</p> 
+<p><a href="#">Privacy Policy</a></p>
+<p><a href="#">Support</a></p>
+<p><a href="#">Terms and Conditions</a></p>
+ </div> 
+ </div>
+
+ 
+   <div id="subscribe">
+    
+      <h2>Stay Updated!</h2>
+    <p>Subscribe to our newsletter</p>
+
+    <form action=""><br>
+      <input type="email" name="" id="" placeholder="Enter email"><br>
+      <button type="submit">Subscribe</button>
+    </form>
+</div>
+</div>
+  <div id="bottom">
+<p>Copyright © 2024 Skillman. All rights reserved. Created by Praize & Emiblaq tech co</p>
+  </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

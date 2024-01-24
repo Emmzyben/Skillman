@@ -1,0 +1,27 @@
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+main>div{
+    padding: 50px;
+    border: 1px solid rgb(236, 229, 229);
+    border-radius: 10px;
+    margin: 50px;
+}
+
+main>div>form>input{
+margin: 10px;
+padding: 8px;
+border-radius: 8px;
+border: 1px solid rgb(236, 229, 229);
+}
+main>div>h2{
+color: grey;
+}
+#submit{
+    background-color: #0884cc;
+    color: white;
+    font-size: 14px;
+}
